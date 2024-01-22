@@ -1,0 +1,432 @@
+.presales-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(105deg, #1b0043 0%, #100028 40%, #06001a 100%);
+}
+
+.presales-wrapper>img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.175;
+  filter: blur(0.5px);
+}
+
+.presales-wraper .container {
+  position: absolute;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.wallet-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wallet-button .logo {
+  color: #fff;
+  z-index: 100;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+
+  background: -webkit-linear-gradient(180deg, #fdffdf 0%, #8b31ff 55%, #00d5ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wallet-button button {
+  background-color: transparent;
+  border: 2px solid white;
+  width: 170px;
+  height: 45px;
+  outline: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.flex-content {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.flex-item h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 0rem;
+}
+
+.flex-item p {
+  width: 100%;
+  color: #fff;
+}
+
+.flex-content .flex-item p a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.flex-item.wallet-content {
+  width: 40%;
+  position: relative;
+  padding: 2rem 1.5rem;
+  background-color: #8b31ff;
+  border-radius: 10px;
+  align-self: flex-start;
+  overflow: hidden;
+}
+
+.flex-item.wallet-content img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+.flex-item.wallet-content h1 {
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0rem;
+  z-index: 1;
+
+  background: -webkit-linear-gradient(0deg, #fdffdf 0%, #00d5ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.flex-item.wallet-content>h1 {
+  text-align: center;
+}
+
+
+.timer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.timer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #8a41ea;
+  width: 22%;
+  padding: 0.6rem 0;
+  border-radius: 7px;
+  z-index: 1;
+}
+
+.timer-item>span {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.timer-item>p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.wallet-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.wallet-details .wallet-balance {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  gap: 2;
+}
+
+.wallet-balance .balance-item {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.wallet-balance .balance-item span:first-child {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #eee;
+}
+
+.wallet-balance span:nth-child(2) {
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  background: -webkit-linear-gradient(0deg, #eee, #82eaff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.buy-token-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.buy-token-input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  z-index: 1;
+}
+
+.buy-token-input input {
+  width: 80%;
+  height: 41px;
+  border-radius: 7px;
+  border: 1.5px solid #a668f6;
+  background-color: #893fea;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+
+.buy-token-input button {
+  width: 45px;
+  outline: none;
+  border: 1.5px solid white;
+  border-radius: 7px;
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  margin: 0 3px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.buy-token-input button:hover {
+  background-color: #fff;
+  color: #9b56f4;
+}
+
+.buy-token-content .buy-token-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.buy-token-buttons>button {
+  width: 46%;
+  background-color: #17003a;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 7px;
+  padding: 0.7rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  z-index: 2;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .flex-content {
+    padding: 2rem;
+    justify-content: center;
+  }
+
+  .flex-item {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .flex-item h1 {
+    width: 80%;
+    font-size: 2.25rem;
+    align-self: flex-start;
+  }
+
+  .flex-item>p {
+    width: 80%;
+    align-self: flex-start;
+  }
+
+  .flex-item.wallet-content {
+    width: 85%;
+    padding: 2rem;
+  }
+
+  .wallet-button {
+    margin-top: 1rem;
+  }
+
+  .wallet-button button {
+    width: 160px;
+    font-size: 0.95rem;
+  }
+
+  .buy-token-content .buy-token-buttons {
+    flex-direction: column;
+  }
+
+  .buy-token-buttons>button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+
+  .flex-content {
+    padding: 2rem 1rem;
+    justify-content: center;
+  }
+
+  .flex-item {
+    width: 90%;
+    margin: 1rem 0;
+  }
+
+  .flex-item h1 {
+    width: 85%;
+    font-size: 1.8rem;
+    align-self: flex-start;
+  }
+
+  .flex-item>p {
+    width: 85%;
+    align-self: flex-start;
+  }
+
+  .flex-item.wallet-content {
+    width: 92%;
+    padding: 2rem;
+  }
+
+  .wallet-button {
+    margin-top: 1rem;
+  }
+
+  .wallet-button button {
+    width: 145px;
+    height: 40px;
+    font-size: 0.85rem;
+  }
+
+  .timer {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .timer-item {
+    width: 45%;
+    margin: 0.5rem 0;
+  }
+
+  .timer-item>span {
+    font-size: 1.8rem;
+  }
+
+  .timer-item>p {
+    font-size: 0.7rem;
+  }
+
+  .wallet-details {
+    flex-direction: column;
+  }
+
+  .wallet-balance {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wallet-balance .balance-item {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .wallet-balance .balance-item span:first-child {
+    font-size: 0.95rem;
+  }
+
+  .wallet-balance span:nth-child(2) {
+    font-size: 1rem;
+  }
+
+  .buy-token-content {
+    width: 100%;
+  }
+
+  .buy-token-input {
+    width: 100%;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+
+  .buy-token-input input {
+    width: 80%;
+    height: 45px;
+    border-radius: 7px;
+    border: 1.5px solid #a668f6;
+    background-color: #893fea;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+  }
+
+  .buy-token-input button {
+    width: 45px;
+    height: 45px;
+    outline: none;
+    border: 1.5px solid white;
+    border-radius: 7px;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+  }
+}
